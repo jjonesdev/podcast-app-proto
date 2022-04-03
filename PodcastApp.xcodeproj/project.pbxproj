@@ -79,7 +79,9 @@
 				E0A017F727F92A030063849A /* CoreTests */,
 				E0131CF027F928C0002C6C7C /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		E0131CF027F928C0002C6C7C /* Products */ = {
 			isa = PBXGroup;
