@@ -14,6 +14,8 @@
 		E0131CFC27F928C1002C6C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0131CFB27F928C1002C6C7C /* Assets.xcassets */; };
 		E0131CFF27F928C1002C6C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0131CFD27F928C1002C6C7C /* LaunchScreen.storyboard */; };
 		E054E2B527F933DD00D955FE /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E054E2B427F933DD00D955FE /* FeedKit */; };
+		E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2B827F9385700D955FE /* HTTPClient.swift */; };
+		E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */; };
 		E091BF6627F9339F00297C8A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; };
 		E091BF6B27F9339F00297C8A /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BF6A27F9339F00297C8A /* CoreTests.swift */; };
 		E091BF6C27F9339F00297C8A /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = E091BF6027F9339F00297C8A /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +40,8 @@
 		E0131CFB27F928C1002C6C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0131CFE27F928C1002C6C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0131D0027F928C1002C6C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E054E2B827F9385700D955FE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		E091BF5E27F9339F00297C8A /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E091BF6027F9339F00297C8A /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		E091BF6527F9339F00297C8A /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				E091BF6027F9339F00297C8A /* Core.h */,
+				E054E2B827F9385700D955FE /* HTTPClient.swift */,
+				E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -288,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */,
+				E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +579,7 @@
 		E091BF7127F9339F00297C8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PN87M324F3;
@@ -589,6 +598,7 @@
 		E091BF7227F9339F00297C8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PN87M324F3;
