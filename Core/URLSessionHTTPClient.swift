@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class URLSessionHTTPClient: HTTPClient {
+public final class URLSessionHTTPClient: HTTPClient {
   enum Error: Swift.Error {
     case non200HTTPStatusCode
     case connectivity
@@ -15,11 +15,11 @@ final class URLSessionHTTPClient: HTTPClient {
   
   private let session: URLSession
   
-  init(session: URLSession = .shared) {
+  public init(session: URLSession = .shared) {
     self.session = session
   }
   
-  func get(url: URL) async throws -> Data {
+  public func get(url: URL) async throws -> Data {
     do {
       let (data, httpResponse) = try await session.data(from: url)
       guard let httpResponse = httpResponse as? HTTPURLResponse, httpResponse.statusCode == 200 else {
