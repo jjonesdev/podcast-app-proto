@@ -13,15 +13,28 @@
 		E0131CFA27F928C0002C6C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0131CF827F928C0002C6C7C /* Main.storyboard */; };
 		E0131CFC27F928C1002C6C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0131CFB27F928C1002C6C7C /* Assets.xcassets */; };
 		E0131CFF27F928C1002C6C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0131CFD27F928C1002C6C7C /* LaunchScreen.storyboard */; };
+		E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */; };
+		E022BDFF27FBB62F006C044E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; platformFilter = ios; };
+		E022BE0027FBB62F006C044E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E054E2B527F933DD00D955FE /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E054E2B427F933DD00D955FE /* FeedKit */; };
 		E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2B827F9385700D955FE /* HTTPClient.swift */; };
 		E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */; };
 		E091BF6627F9339F00297C8A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; };
 		E091BF6B27F9339F00297C8A /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BF6A27F9339F00297C8A /* CoreTests.swift */; };
 		E091BF6C27F9339F00297C8A /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = E091BF6027F9339F00297C8A /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0D5548B27FE893A0050012F /* RemotePodcastItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */; };
+		E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */; };
+		E0DBE48627FDBE8C0079E445 /* RemotePodcastMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E022BE0127FBB62F006C044E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0131CE727F928C0002C6C7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E091BF5D27F9339F00297C8A;
+			remoteInfo = Core;
+		};
 		E091BF6727F9339F00297C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E0131CE727F928C0002C6C7C /* Project object */;
@@ -30,6 +43,20 @@
 			remoteInfo = Core;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E022BE0327FBB630006C044E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E022BE0027FBB62F006C044E /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E0131CEF27F928C0002C6C7C /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,12 +67,16 @@
 		E0131CFB27F928C1002C6C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0131CFE27F928C1002C6C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0131D0027F928C1002C6C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastLoader.swift; sourceTree = "<group>"; };
 		E054E2B827F9385700D955FE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		E091BF5E27F9339F00297C8A /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E091BF6027F9339F00297C8A /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		E091BF6527F9339F00297C8A /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E091BF6A27F9339F00297C8A /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
+		E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastItem.swift; sourceTree = "<group>"; };
+		E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastEpisode.swift; sourceTree = "<group>"; };
+		E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E022BDFF27FBB62F006C044E /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,13 +133,13 @@
 		E0131CF127F928C0002C6C7C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E0131D0027F928C1002C6C7C /* Info.plist */,
 				E0131CF227F928C0002C6C7C /* AppDelegate.swift */,
 				E0131CF427F928C0002C6C7C /* SceneDelegate.swift */,
 				E0131CF627F928C0002C6C7C /* ViewController.swift */,
-				E0131CF827F928C0002C6C7C /* Main.storyboard */,
 				E0131CFB27F928C1002C6C7C /* Assets.xcassets */,
 				E0131CFD27F928C1002C6C7C /* LaunchScreen.storyboard */,
-				E0131D0027F928C1002C6C7C /* Info.plist */,
+				E0131CF827F928C0002C6C7C /* Main.storyboard */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -125,6 +157,10 @@
 				E091BF6027F9339F00297C8A /* Core.h */,
 				E054E2B827F9385700D955FE /* HTTPClient.swift */,
 				E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */,
+				E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */,
+				E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */,
+				E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */,
+				E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -158,10 +194,12 @@
 				E0131CEB27F928C0002C6C7C /* Sources */,
 				E0131CEC27F928C0002C6C7C /* Frameworks */,
 				E0131CED27F928C0002C6C7C /* Resources */,
+				E022BE0327FBB630006C044E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E022BE0227FBB62F006C044E /* PBXTargetDependency */,
 			);
 			name = iOS;
 			productName = PodcastApp;
@@ -296,6 +334,10 @@
 			files = (
 				E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */,
 				E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */,
+				E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */,
+				E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */,
+				E0D5548B27FE893A0050012F /* RemotePodcastItem.swift in Sources */,
+				E0DBE48627FDBE8C0079E445 /* RemotePodcastMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +352,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E022BE0227FBB62F006C044E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = E091BF5D27F9339F00297C8A /* Core */;
+			targetProxy = E022BE0127FBB62F006C044E /* PBXContainerItemProxy */;
+		};
 		E091BF6827F9339F00297C8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E091BF5D27F9339F00297C8A /* Core */;
