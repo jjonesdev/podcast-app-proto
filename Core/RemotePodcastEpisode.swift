@@ -8,7 +8,7 @@
 import Foundation
 import FeedKit
 
-public struct RemotePodcastEpisode {
+public struct RemotePodcastEpisode: Identifiable {
   enum Error: Swift.Error {
     case missingTitle
     case missingDescription
