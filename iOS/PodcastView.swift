@@ -42,7 +42,7 @@ struct PodcastView: View {
       .navigationTitle(podcast?.title ?? "")
       .listStyle(.plain)
       .task {
-        let podcastURL = URL(string: "http://localhost:3000/swiftbysundell")!
+        let podcastURL = URL(string: "http://localhost:3002/swiftbysundell")!
         do {
           podcast = try await podcastLoader.load(url: podcastURL)
         } catch (let error) {
