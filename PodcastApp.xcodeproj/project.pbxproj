@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */; };
-		E01729FF281F056200BE0933 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01729FE281F056200BE0933 /* ContentView.swift */; };
 		E0172A01281F056200BE0933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0172A00281F056200BE0933 /* Assets.xcassets */; };
 		E0172A04281F056200BE0933 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0172A03281F056200BE0933 /* Preview Assets.xcassets */; };
+		E0172A0B281F081400BE0933 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0A281F081400BE0933 /* TabBarView.swift */; };
 		E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */; };
 		E054E2B527F933DD00D955FE /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E054E2B427F933DD00D955FE /* FeedKit */; };
 		E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2B827F9385700D955FE /* HTTPClient.swift */; };
@@ -36,9 +36,9 @@
 /* Begin PBXFileReference section */
 		E01729FA281F056200BE0933 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPrototypeApp.swift; sourceTree = "<group>"; };
-		E01729FE281F056200BE0933 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0172A00281F056200BE0933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0172A03281F056200BE0933 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0172A0A281F081400BE0933 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastLoader.swift; sourceTree = "<group>"; };
 		E054E2B827F9385700D955FE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */,
-				E01729FE281F056200BE0933 /* ContentView.swift */,
+				E0172A0A281F081400BE0933 /* TabBarView.swift */,
 				E0172A00281F056200BE0933 /* Assets.xcassets */,
 				E0172A02281F056200BE0933 /* Preview Content */,
 			);
@@ -295,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01729FF281F056200BE0933 /* ContentView.swift in Sources */,
+				E0172A0B281F081400BE0933 /* TabBarView.swift in Sources */,
 				E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
