@@ -7,34 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E0131CF327F928C0002C6C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0131CF227F928C0002C6C7C /* AppDelegate.swift */; };
-		E0131CF527F928C0002C6C7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0131CF427F928C0002C6C7C /* SceneDelegate.swift */; };
-		E0131CF727F928C0002C6C7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0131CF627F928C0002C6C7C /* ViewController.swift */; };
-		E0131CFC27F928C1002C6C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0131CFB27F928C1002C6C7C /* Assets.xcassets */; };
-		E0131CFF27F928C1002C6C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0131CFD27F928C1002C6C7C /* LaunchScreen.storyboard */; };
+		E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */; };
+		E01729FF281F056200BE0933 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01729FE281F056200BE0933 /* ContentView.swift */; };
+		E0172A01281F056200BE0933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0172A00281F056200BE0933 /* Assets.xcassets */; };
+		E0172A04281F056200BE0933 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0172A03281F056200BE0933 /* Preview Assets.xcassets */; };
 		E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */; };
-		E022BDFF27FBB62F006C044E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; platformFilter = ios; };
-		E022BE0027FBB62F006C044E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E054E2B527F933DD00D955FE /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E054E2B427F933DD00D955FE /* FeedKit */; };
 		E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2B827F9385700D955FE /* HTTPClient.swift */; };
 		E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */; };
 		E091BF6627F9339F00297C8A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; };
 		E091BF6B27F9339F00297C8A /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BF6A27F9339F00297C8A /* CoreTests.swift */; };
 		E091BF6C27F9339F00297C8A /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = E091BF6027F9339F00297C8A /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0A77EF028006837006B0A65 /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A77EEF28006837006B0A65 /* PodcastView.swift */; };
 		E0D5548B27FE893A0050012F /* RemotePodcastItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */; };
 		E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */; };
 		E0DBE48627FDBE8C0079E445 /* RemotePodcastMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E022BE0127FBB62F006C044E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E0131CE727F928C0002C6C7C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E091BF5D27F9339F00297C8A;
-			remoteInfo = Core;
-		};
 		E091BF6727F9339F00297C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E0131CE727F928C0002C6C7C /* Project object */;
@@ -44,28 +33,12 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E022BE0327FBB630006C044E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E022BE0027FBB62F006C044E /* Core.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		E0131CEF27F928C0002C6C7C /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0131CF227F928C0002C6C7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0131CF427F928C0002C6C7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E0131CF627F928C0002C6C7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E0131CFB27F928C1002C6C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E0131CFE27F928C1002C6C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E0131D0027F928C1002C6C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E01729FA281F056200BE0933 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPrototypeApp.swift; sourceTree = "<group>"; };
+		E01729FE281F056200BE0933 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E0172A00281F056200BE0933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0172A03281F056200BE0933 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastLoader.swift; sourceTree = "<group>"; };
 		E054E2B827F9385700D955FE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
@@ -73,18 +46,16 @@
 		E091BF6027F9339F00297C8A /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		E091BF6527F9339F00297C8A /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E091BF6A27F9339F00297C8A /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
-		E0A77EEF28006837006B0A65 /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
 		E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastItem.swift; sourceTree = "<group>"; };
 		E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastEpisode.swift; sourceTree = "<group>"; };
 		E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E0131CEC27F928C0002C6C7C /* Frameworks */ = {
+		E01729F7281F056200BE0933 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E022BDFF27FBB62F006C044E /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,11 +81,11 @@
 		E0131CE627F928C0002C6C7C = {
 			isa = PBXGroup;
 			children = (
-				E0131CF127F928C0002C6C7C /* iOS */,
 				E091BF5F27F9339F00297C8A /* Core */,
 				E091BF6927F9339F00297C8A /* CoreTests */,
-				E0131CF027F928C0002C6C7C /* Products */,
+				E01729FB281F056200BE0933 /* iOSPrototype */,
 				E054E2B327F933DD00D955FE /* Frameworks */,
+				E0131CF027F928C0002C6C7C /* Products */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -123,25 +94,30 @@
 		E0131CF027F928C0002C6C7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E0131CEF27F928C0002C6C7C /* iOS.app */,
 				E091BF5E27F9339F00297C8A /* Core.framework */,
 				E091BF6527F9339F00297C8A /* CoreTests.xctest */,
+				E01729FA281F056200BE0933 /* PodcastApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E0131CF127F928C0002C6C7C /* iOS */ = {
+		E01729FB281F056200BE0933 /* iOSPrototype */ = {
 			isa = PBXGroup;
 			children = (
-				E0131D0027F928C1002C6C7C /* Info.plist */,
-				E0131CF227F928C0002C6C7C /* AppDelegate.swift */,
-				E0131CF427F928C0002C6C7C /* SceneDelegate.swift */,
-				E0131CF627F928C0002C6C7C /* ViewController.swift */,
-				E0A77EEF28006837006B0A65 /* PodcastView.swift */,
-				E0131CFB27F928C1002C6C7C /* Assets.xcassets */,
-				E0131CFD27F928C1002C6C7C /* LaunchScreen.storyboard */,
+				E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */,
+				E01729FE281F056200BE0933 /* ContentView.swift */,
+				E0172A00281F056200BE0933 /* Assets.xcassets */,
+				E0172A02281F056200BE0933 /* Preview Content */,
 			);
-			path = iOS;
+			path = iOSPrototype;
+			sourceTree = "<group>";
+		};
+		E0172A02281F056200BE0933 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E0172A03281F056200BE0933 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		E054E2B327F933DD00D955FE /* Frameworks */ = {
@@ -187,23 +163,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E0131CEE27F928C0002C6C7C /* iOS */ = {
+		E01729F9281F056200BE0933 /* iOSPrototype */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0131D0327F928C1002C6C7C /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildConfigurationList = E0172A05281F056200BE0933 /* Build configuration list for PBXNativeTarget "iOSPrototype" */;
 			buildPhases = (
-				E0131CEB27F928C0002C6C7C /* Sources */,
-				E0131CEC27F928C0002C6C7C /* Frameworks */,
-				E0131CED27F928C0002C6C7C /* Resources */,
-				E022BE0327FBB630006C044E /* Embed Frameworks */,
+				E01729F6281F056200BE0933 /* Sources */,
+				E01729F7281F056200BE0933 /* Frameworks */,
+				E01729F8281F056200BE0933 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E022BE0227FBB62F006C044E /* PBXTargetDependency */,
 			);
-			name = iOS;
-			productName = PodcastApp;
-			productReference = E0131CEF27F928C0002C6C7C /* iOS.app */;
+			name = iOSPrototype;
+			productName = iOS;
+			productReference = E01729FA281F056200BE0933 /* PodcastApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E091BF5D27F9339F00297C8A /* Core */ = {
@@ -255,7 +229,7 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					E0131CEE27F928C0002C6C7C = {
+					E01729F9281F056200BE0933 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 					E091BF5D27F9339F00297C8A = {
@@ -283,7 +257,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E0131CEE27F928C0002C6C7C /* iOS */,
+				E01729F9281F056200BE0933 /* iOSPrototype */,
 				E091BF5D27F9339F00297C8A /* Core */,
 				E091BF6427F9339F00297C8A /* CoreTests */,
 			);
@@ -291,12 +265,12 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E0131CED27F928C0002C6C7C /* Resources */ = {
+		E01729F8281F056200BE0933 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0131CFF27F928C1002C6C7C /* LaunchScreen.storyboard in Resources */,
-				E0131CFC27F928C1002C6C7C /* Assets.xcassets in Resources */,
+				E0172A04281F056200BE0933 /* Preview Assets.xcassets in Resources */,
+				E0172A01281F056200BE0933 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +291,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E0131CEB27F928C0002C6C7C /* Sources */ = {
+		E01729F6281F056200BE0933 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0131CF727F928C0002C6C7C /* ViewController.swift in Sources */,
-				E0A77EF028006837006B0A65 /* PodcastView.swift in Sources */,
-				E0131CF327F928C0002C6C7C /* AppDelegate.swift in Sources */,
-				E0131CF527F928C0002C6C7C /* SceneDelegate.swift in Sources */,
+				E01729FF281F056200BE0933 /* ContentView.swift in Sources */,
+				E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,29 +324,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E022BE0227FBB62F006C044E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = E091BF5D27F9339F00297C8A /* Core */;
-			targetProxy = E022BE0127FBB62F006C044E /* PBXContainerItemProxy */;
-		};
 		E091BF6827F9339F00297C8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E091BF5D27F9339F00297C8A /* Core */;
 			targetProxy = E091BF6727F9339F00297C8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E0131CFD27F928C1002C6C7C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0131CFE27F928C1002C6C7C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E0131D0127F928C1002C6C7C /* Debug */ = {
@@ -491,18 +446,20 @@
 			};
 			name = Release;
 		};
-		E0131D0427F928C1002C6C7C /* Debug */ = {
+		E0172A06281F056200BE0933 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSPrototype/Preview Content\"";
 				DEVELOPMENT_TEAM = PN87M324F3;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -510,26 +467,28 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jonesandcode.PodcastApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonesandcode.PodcastApp.iOSPrototype;
+				PRODUCT_NAME = PodcastApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E0131D0527F928C1002C6C7C /* Release */ = {
+		E0172A07281F056200BE0933 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSPrototype/Preview Content\"";
 				DEVELOPMENT_TEAM = PN87M324F3;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -537,8 +496,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jonesandcode.PodcastApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonesandcode.PodcastApp.iOSPrototype;
+				PRODUCT_NAME = PodcastApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -664,11 +623,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0131D0327F928C1002C6C7C /* Build configuration list for PBXNativeTarget "iOS" */ = {
+		E0172A05281F056200BE0933 /* Build configuration list for PBXNativeTarget "iOSPrototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0131D0427F928C1002C6C7C /* Debug */,
-				E0131D0527F928C1002C6C7C /* Release */,
+				E0172A06281F056200BE0933 /* Debug */,
+				E0172A07281F056200BE0933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
