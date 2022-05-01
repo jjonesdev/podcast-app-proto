@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct iOSPrototypeApp: App {
-    var body: some Scene {
-        WindowGroup {
-            TabBarView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      TabBarView()
     }
+  }
 }
