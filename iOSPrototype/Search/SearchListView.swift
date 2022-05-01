@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SearchList: View {
+struct SearchListView: View {
   private let store: [SearchRowModel] = SearchRowModel.makePrototypeModels()
 
   var body: some View {
@@ -21,17 +21,14 @@ struct SearchList: View {
 
   private func makeRow(from model: SearchRowModel) -> some View {
     NavigationLink(model.title) {
-      VStack {
-        Text(model.title)
-        Text(model.endpoint)
-      }
-      .navigationTitle(model.title)
+      SearchDetailView()
+        .navigationTitle(model.title)
     }
   }
 }
 
 struct SearchList_Previews: PreviewProvider {
   static var previews: some View {
-    SearchList()
+    SearchListView()
   }
 }

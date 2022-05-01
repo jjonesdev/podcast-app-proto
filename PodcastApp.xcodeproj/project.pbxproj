@@ -12,8 +12,9 @@
 		E0172A04281F056200BE0933 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0172A03281F056200BE0933 /* Preview Assets.xcassets */; };
 		E0172A0B281F081400BE0933 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0A281F081400BE0933 /* TabBarView.swift */; };
 		E0172A0E281F09DA00BE0933 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0D281F09DA00BE0933 /* SearchView.swift */; };
-		E0172A10281F0A1200BE0933 /* SearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0F281F0A1200BE0933 /* SearchList.swift */; };
+		E0172A10281F0A1200BE0933 /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0F281F0A1200BE0933 /* SearchListView.swift */; };
 		E0172A12281F0D0600BE0933 /* SearchRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A11281F0D0600BE0933 /* SearchRowModel.swift */; };
+		E0172A16281F106900BE0933 /* SearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A15281F106900BE0933 /* SearchDetailView.swift */; };
 		E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */; };
 		E054E2B527F933DD00D955FE /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E054E2B427F933DD00D955FE /* FeedKit */; };
 		E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2B827F9385700D955FE /* HTTPClient.swift */; };
@@ -43,8 +44,9 @@
 		E0172A03281F056200BE0933 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0172A0A281F081400BE0933 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		E0172A0D281F09DA00BE0933 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		E0172A0F281F0A1200BE0933 /* SearchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchList.swift; sourceTree = "<group>"; };
+		E0172A0F281F0A1200BE0933 /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
 		E0172A11281F0D0600BE0933 /* SearchRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRowModel.swift; sourceTree = "<group>"; };
+		E0172A15281F106900BE0933 /* SearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailView.swift; sourceTree = "<group>"; };
 		E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastLoader.swift; sourceTree = "<group>"; };
 		E054E2B827F9385700D955FE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
@@ -130,11 +132,20 @@
 		E0172A0C281F09CD00BE0933 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				E0172A15281F106900BE0933 /* SearchDetailView.swift */,
+				E0172A0F281F0A1200BE0933 /* SearchListView.swift */,
 				E0172A0D281F09DA00BE0933 /* SearchView.swift */,
-				E0172A0F281F0A1200BE0933 /* SearchList.swift */,
-				E0172A11281F0D0600BE0933 /* SearchRowModel.swift */,
+				E0172A17281F109C00BE0933 /* Models */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		E0172A17281F109C00BE0933 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0172A11281F0D0600BE0933 /* SearchRowModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E054E2B327F933DD00D955FE /* Frameworks */ = {
@@ -313,8 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0172A0B281F081400BE0933 /* TabBarView.swift in Sources */,
-				E0172A10281F0A1200BE0933 /* SearchList.swift in Sources */,
+				E0172A10281F0A1200BE0933 /* SearchListView.swift in Sources */,
 				E0172A0E281F09DA00BE0933 /* SearchView.swift in Sources */,
+				E0172A16281F106900BE0933 /* SearchDetailView.swift in Sources */,
 				E0172A12281F0D0600BE0933 /* SearchRowModel.swift in Sources */,
 				E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */,
 			);
