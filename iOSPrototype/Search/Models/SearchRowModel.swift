@@ -14,7 +14,7 @@ struct SearchRowModel: Identifiable {
 }
 
 extension SearchRowModel {
-  static func makePrototypeModels() -> [SearchRowModel] {
+  static var prototypeModels: [SearchRowModel] {
     [
       SearchRowModel(
         title: "Accidental Tech Podcast",

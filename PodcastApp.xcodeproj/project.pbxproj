@@ -15,6 +15,8 @@
 		E0172A10281F0A1200BE0933 /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0F281F0A1200BE0933 /* SearchListView.swift */; };
 		E0172A12281F0D0600BE0933 /* SearchRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A11281F0D0600BE0933 /* SearchRowModel.swift */; };
 		E0172A16281F106900BE0933 /* SearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A15281F106900BE0933 /* SearchDetailView.swift */; };
+		E0172A1B281F196F00BE0933 /* SearchDetailView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A1A281F196F00BE0933 /* SearchDetailView-ViewModel.swift */; };
+		E0172A1E281F1C8A00BE0933 /* SearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A1D281F1C8A00BE0933 /* SearchLoader.swift */; };
 		E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */; };
 		E054E2B527F933DD00D955FE /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E054E2B427F933DD00D955FE /* FeedKit */; };
 		E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2B827F9385700D955FE /* HTTPClient.swift */; };
@@ -47,6 +49,8 @@
 		E0172A0F281F0A1200BE0933 /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
 		E0172A11281F0D0600BE0933 /* SearchRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRowModel.swift; sourceTree = "<group>"; };
 		E0172A15281F106900BE0933 /* SearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailView.swift; sourceTree = "<group>"; };
+		E0172A1A281F196F00BE0933 /* SearchDetailView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchDetailView-ViewModel.swift"; sourceTree = "<group>"; };
+		E0172A1D281F1C8A00BE0933 /* SearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoader.swift; sourceTree = "<group>"; };
 		E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastLoader.swift; sourceTree = "<group>"; };
 		E054E2B827F9385700D955FE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
@@ -132,10 +136,10 @@
 		E0172A0C281F09CD00BE0933 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				E0172A15281F106900BE0933 /* SearchDetailView.swift */,
-				E0172A0F281F0A1200BE0933 /* SearchListView.swift */,
-				E0172A0D281F09DA00BE0933 /* SearchView.swift */,
+				E0172A19281F195900BE0933 /* View Models */,
 				E0172A17281F109C00BE0933 /* Models */,
+				E0172A18281F10F800BE0933 /* Views */,
+				E0172A1D281F1C8A00BE0933 /* SearchLoader.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -146,6 +150,24 @@
 				E0172A11281F0D0600BE0933 /* SearchRowModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E0172A18281F10F800BE0933 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0172A15281F106900BE0933 /* SearchDetailView.swift */,
+				E0172A0F281F0A1200BE0933 /* SearchListView.swift */,
+				E0172A0D281F09DA00BE0933 /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0172A19281F195900BE0933 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0172A1A281F196F00BE0933 /* SearchDetailView-ViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		E054E2B327F933DD00D955FE /* Frameworks */ = {
@@ -325,7 +347,9 @@
 			files = (
 				E0172A0B281F081400BE0933 /* TabBarView.swift in Sources */,
 				E0172A10281F0A1200BE0933 /* SearchListView.swift in Sources */,
+				E0172A1E281F1C8A00BE0933 /* SearchLoader.swift in Sources */,
 				E0172A0E281F09DA00BE0933 /* SearchView.swift in Sources */,
+				E0172A1B281F196F00BE0933 /* SearchDetailView-ViewModel.swift in Sources */,
 				E0172A16281F106900BE0933 /* SearchDetailView.swift in Sources */,
 				E0172A12281F0D0600BE0933 /* SearchRowModel.swift in Sources */,
 				E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */,

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchListView: View {
-  private let store: [SearchRowModel] = SearchRowModel.makePrototypeModels()
+  private let store: [SearchRowModel] = SearchRowModel.prototypeModels
 
   var body: some View {
     List {
@@ -19,10 +19,14 @@ struct SearchListView: View {
     .navigationTitle("Search")
   }
 
-  private func makeRow(from model: SearchRowModel) -> some View {
-    NavigationLink(model.title) {
-      SearchDetailView()
+  @MainActor private func makeRow(from model: SearchRowModel) -> some View {
+    let loader = SearchLoader(endpoint: model.endpoint)
+    let viewModel = SearchDetailView.ViewModel(searchLoader: loader)
+
+    return NavigationLink(model.title) {
+      SearchDetailView(viewModel: viewModel)
         .navigationTitle(model.title)
+        .onAppear { Task { await viewModel.load() } }
     }
   }
 }
