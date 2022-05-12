@@ -21,6 +21,7 @@
 		E054E2B527F933DD00D955FE /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E054E2B427F933DD00D955FE /* FeedKit */; };
 		E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2B827F9385700D955FE /* HTTPClient.swift */; };
 		E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */; };
+		E05E21DD282C843800404B2A /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E21DC282C843800404B2A /* PersistentContainer.swift */; };
 		E091BF6627F9339F00297C8A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; };
 		E091BF6B27F9339F00297C8A /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BF6A27F9339F00297C8A /* CoreTests.swift */; };
 		E091BF6C27F9339F00297C8A /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = E091BF6027F9339F00297C8A /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -373,6 +374,7 @@
 				E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */,
 				E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */,
 				E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */,
+				E05E21DD282C843800404B2A /* PersistentContainer.swift in Sources */,
 				E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */,
 				E0D5548B27FE893A0050012F /* RemotePodcastItem.swift in Sources */,
 				E0DBE48627FDBE8C0079E445 /* RemotePodcastMapper.swift in Sources */,
