@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Core
 
 struct SearchListView: View {
   private let store: [SearchRowModel] = SearchRowModel.prototypeModels

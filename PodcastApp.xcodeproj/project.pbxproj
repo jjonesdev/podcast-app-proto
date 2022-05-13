@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01428DF282DD8C9006C52B2 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428DE282DD8C9006C52B2 /* LibraryView.swift */; };
+		E01428E1282DE137006C52B2 /* LibraryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428E0282DE137006C52B2 /* LibraryDetailView.swift */; };
+		E01428E3282DE5B0006C52B2 /* MockPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428E2282DE5B0006C52B2 /* MockPodcast.swift */; };
 		E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */; };
 		E0172A01281F056200BE0933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0172A00281F056200BE0933 /* Assets.xcassets */; };
 		E0172A04281F056200BE0933 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0172A03281F056200BE0933 /* Preview Assets.xcassets */; };
@@ -23,7 +26,7 @@
 		E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */; };
 		E05E21DD282C843800404B2A /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E21DC282C843800404B2A /* PersistentContainer.swift */; };
 		E05E21DF282C862A00404B2A /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E21DE282C862A00404B2A /* StorageProvider.swift */; };
-		E05E21E2282C88A600404B2A /* CoreDataStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E05E21E0282C88A600404B2A /* CoreDataStore.xcdatamodeld */; };
+		E05E21E2282C88A600404B2A /* Subscriptions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E05E21E0282C88A600404B2A /* Subscriptions.xcdatamodeld */; };
 		E091BF6627F9339F00297C8A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; };
 		E091BF6B27F9339F00297C8A /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BF6A27F9339F00297C8A /* CoreTests.swift */; };
 		E091BF6C27F9339F00297C8A /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = E091BF6027F9339F00297C8A /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E01428DE282DD8C9006C52B2 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		E01428E0282DE137006C52B2 /* LibraryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDetailView.swift; sourceTree = "<group>"; };
+		E01428E2282DE5B0006C52B2 /* MockPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPodcast.swift; sourceTree = "<group>"; };
 		E01729FA281F056200BE0933 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPrototypeApp.swift; sourceTree = "<group>"; };
 		E0172A00281F056200BE0933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,12 +125,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E01428DD282DD8B4006C52B2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E01428DE282DD8C9006C52B2 /* LibraryView.swift */,
+				E01428E0282DE137006C52B2 /* LibraryDetailView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		E01729FB281F056200BE0933 /* iOSPrototype */ = {
 			isa = PBXGroup;
 			children = (
 				E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */,
 				E0172A0A281F081400BE0933 /* TabBarView.swift */,
 				E0172A00281F056200BE0933 /* Assets.xcassets */,
+				E01428DD282DD8B4006C52B2 /* Library */,
 				E0172A02281F056200BE0933 /* Preview Content */,
 				E0172A0C281F09CD00BE0933 /* Search */,
 			);
@@ -135,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				E0172A03281F056200BE0933 /* Preview Assets.xcassets */,
+				E01428E2282DE5B0006C52B2 /* MockPodcast.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -188,7 +205,7 @@
 			children = (
 				E05E21DC282C843800404B2A /* PersistentContainer.swift */,
 				E05E21DE282C862A00404B2A /* StorageProvider.swift */,
-				E05E21E0282C88A600404B2A /* CoreDataStore.xcdatamodeld */,
+				E05E21E0282C88A600404B2A /* Subscriptions.xcdatamodeld */,
 			);
 			path = "Core Data Store";
 			sourceTree = "<group>";
@@ -365,7 +382,10 @@
 				E0172A0B281F081400BE0933 /* TabBarView.swift in Sources */,
 				E0172A10281F0A1200BE0933 /* SearchListView.swift in Sources */,
 				E0172A1E281F1C8A00BE0933 /* SearchLoader.swift in Sources */,
+				E01428E1282DE137006C52B2 /* LibraryDetailView.swift in Sources */,
 				E0172A0E281F09DA00BE0933 /* SearchView.swift in Sources */,
+				E01428E3282DE5B0006C52B2 /* MockPodcast.swift in Sources */,
+				E01428DF282DD8C9006C52B2 /* LibraryView.swift in Sources */,
 				E0172A1B281F196F00BE0933 /* SearchDetailView-ViewModel.swift in Sources */,
 				E0172A16281F106900BE0933 /* SearchDetailView.swift in Sources */,
 				E0172A12281F0D0600BE0933 /* SearchRowModel.swift in Sources */,
@@ -382,7 +402,7 @@
 				E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */,
 				E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */,
 				E05E21DD282C843800404B2A /* PersistentContainer.swift in Sources */,
-				E05E21E2282C88A600404B2A /* CoreDataStore.xcdatamodeld in Sources */,
+				E05E21E2282C88A600404B2A /* Subscriptions.xcdatamodeld in Sources */,
 				E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */,
 				E0D5548B27FE893A0050012F /* RemotePodcastItem.swift in Sources */,
 				E0DBE48627FDBE8C0079E445 /* RemotePodcastMapper.swift in Sources */,
@@ -748,13 +768,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		E05E21E0282C88A600404B2A /* CoreDataStore.xcdatamodeld */ = {
+		E05E21E0282C88A600404B2A /* Subscriptions.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				E05E21E1282C88A600404B2A /* CoreDataStore.xcdatamodel */,
 			);
 			currentVersion = E05E21E1282C88A600404B2A /* CoreDataStore.xcdatamodel */;
-			path = CoreDataStore.xcdatamodeld;
+			path = Subscriptions.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

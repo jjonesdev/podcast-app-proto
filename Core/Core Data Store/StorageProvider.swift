@@ -8,10 +8,11 @@
 import CoreData
 
 public class StorageProvider {
-  let persistentContainer: NSPersistentContainer
+  public static let shared = StorageProvider()
+  public let persistentContainer: NSPersistentContainer
 
-  public init() {
-    persistentContainer = PersistentContainer(name: "")
+  private init() {
+    persistentContainer = PersistentContainer(name: "Subscriptions")
 
     persistentContainer.loadPersistentStores { description, error in
       if let error = error {
@@ -37,9 +38,6 @@ public class StorageProvider {
       episode.audioType = remoteEpisode.audioType
       podcast.addToEpisodes(episode)
     }
-
-    let subscriptions = Subscriptions(context: persistentContainer.viewContext)
-    subscriptions.addToPodcasts(podcast)
 
     do {
       try persistentContainer.viewContext.save()

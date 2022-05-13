@@ -22,9 +22,16 @@ struct SearchDetailView: View {
     case .loading:
       Text("Loading")
         .foregroundColor(.yellow)
-    case .loaded:
-      Text("Loaded")
-        .foregroundColor(.green)
+    case .loaded(let podcast):
+      VStack {
+        Text(podcast.title)
+        Button {
+          viewModel.subscribe(to: podcast)
+        } label: {
+          Text("Subscribe")
+        }
+
+      }
     case .error:
       Text("Error")
         .foregroundColor(.red)

@@ -15,7 +15,7 @@ struct TabBarView: View {
           Image(systemName: "magnifyingglass")
           Text("Searh View")
         }
-      Text("Library View")
+      LibraryView()
         .tabItem {
           Image(systemName: "square.stack")
           Text("Library")
