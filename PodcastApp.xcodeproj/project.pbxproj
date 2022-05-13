@@ -102,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9649066128201171004A0F56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0172A00281F056200BE0933 /* Assets.xcassets */,
+				E0172A02281F056200BE0933 /* Preview Content */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E0131CE627F928C0002C6C7C = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +152,7 @@
 				E01428DD282DD8B4006C52B2 /* Library */,
 				E0172A02281F056200BE0933 /* Preview Content */,
 				E0172A0C281F09CD00BE0933 /* Search */,
+				9649066128201171004A0F56 /* Supporting Files */,
 			);
 			path = iOSPrototype;
 			sourceTree = "<group>";
