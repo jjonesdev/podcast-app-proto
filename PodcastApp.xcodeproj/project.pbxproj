@@ -204,27 +204,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E05E21DB282C841E00404B2A /* Core Data Store */ = {
+		E05E21DB282C841E00404B2A /* Core Data Subscription Store */ = {
 			isa = PBXGroup;
 			children = (
 				E05E21DC282C843800404B2A /* PersistentContainer.swift */,
 				E05E21DE282C862A00404B2A /* StorageProvider.swift */,
 				E05E21E0282C88A600404B2A /* CoreDataSubscriptionStore.xcdatamodeld */,
 			);
-			path = "Core Data Store";
+			path = "Core Data Subscription Store";
 			sourceTree = "<group>";
 		};
 		E091BF5F27F9339F00297C8A /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				E091BF6027F9339F00297C8A /* Core.h */,
-				E054E2B827F9385700D955FE /* HTTPClient.swift */,
-				E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */,
-				E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */,
-				E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */,
-				E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */,
-				E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */,
-				E05E21DB282C841E00404B2A /* Core Data Store */,
+				E05E21DB282C841E00404B2A /* Core Data Subscription Store */,
+				E0C3D44828333B86004E9C60 /* HTTP Client */,
+				E0C3D44928333BA4004E9C60 /* Remote Search Loader */,
 				E0DA18AB282F45F000EF533A /* Utilities */,
 			);
 			path = Core;
@@ -236,6 +232,26 @@
 				E091BF6A27F9339F00297C8A /* CoreTests.swift */,
 			);
 			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		E0C3D44828333B86004E9C60 /* HTTP Client */ = {
+			isa = PBXGroup;
+			children = (
+				E054E2B827F9385700D955FE /* HTTPClient.swift */,
+				E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */,
+			);
+			path = "HTTP Client";
+			sourceTree = "<group>";
+		};
+		E0C3D44928333BA4004E9C60 /* Remote Search Loader */ = {
+			isa = PBXGroup;
+			children = (
+				E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */,
+				E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */,
+				E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */,
+				E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */,
+			);
+			path = "Remote Search Loader";
 			sourceTree = "<group>";
 		};
 		E0DA18AB282F45F000EF533A /* Utilities */ = {
