@@ -46,6 +46,17 @@ public class StorageProvider {
     }
   }
 
+  public func unsubscribe(from podcast: Podcast) {
+    persistentContainer.viewContext.delete(podcast)
+
+    do {
+      try persistentContainer.viewContext.save()
+    } catch {
+      persistentContainer.viewContext.rollback()
+      print("Failed to save context: \(error)")
+    }
+  }
+
   public func getAllSubscriptions() -> [Podcast] {
     let fetchRequest: NSFetchRequest<Podcast> = Podcast.fetchRequest()
 

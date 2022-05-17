@@ -10,15 +10,15 @@ import SwiftUI
 struct TabBarView: View {
   var body: some View {
     TabView {
-      SearchView()
-        .tabItem {
-          Image(systemName: "magnifyingglass")
-          Text("Searh View")
-        }
       LibraryView()
         .tabItem {
           Image(systemName: "square.stack")
           Text("Library")
+        }
+      SearchView()
+        .tabItem {
+          Image(systemName: "magnifyingglass")
+          Text("Searh View")
         }
     }
   }

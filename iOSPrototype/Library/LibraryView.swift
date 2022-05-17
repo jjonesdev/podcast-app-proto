@@ -16,7 +16,10 @@ struct LibraryView: View {
       List {
         ForEach(viewModel.podcasts) { podcast in
           NavigationLink {
-            LibraryDetailView(podcast: podcast)
+            LibraryDetailView(
+              podcast: podcast,
+              unsubscribeHandler: didTapUnsubscribe
+            )
           } label: {
             Text(podcast.title ?? "Missing Title")
           }
@@ -27,6 +30,10 @@ struct LibraryView: View {
     .onAppear {
       viewModel.getSubscriptions()
     }
+  }
+
+  func didTapUnsubscribe() {
+    viewModel.getSubscriptions()
   }
 }
 

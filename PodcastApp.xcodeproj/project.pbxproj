@@ -11,8 +11,6 @@
 		E01428E1282DE137006C52B2 /* LibraryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428E0282DE137006C52B2 /* LibraryDetailView.swift */; };
 		E01428E3282DE5B0006C52B2 /* MockPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428E2282DE5B0006C52B2 /* MockPodcast.swift */; };
 		E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */; };
-		E0172A01281F056200BE0933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0172A00281F056200BE0933 /* Assets.xcassets */; };
-		E0172A04281F056200BE0933 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0172A03281F056200BE0933 /* Preview Assets.xcassets */; };
 		E0172A0B281F081400BE0933 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0A281F081400BE0933 /* TabBarView.swift */; };
 		E0172A0E281F09DA00BE0933 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0D281F09DA00BE0933 /* SearchView.swift */; };
 		E0172A10281F0A1200BE0933 /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0F281F0A1200BE0933 /* SearchListView.swift */; };
@@ -21,7 +19,6 @@
 		E0172A1B281F196F00BE0933 /* SearchDetailView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A1A281F196F00BE0933 /* SearchDetailView-ViewModel.swift */; };
 		E0172A1E281F1C8A00BE0933 /* SearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A1D281F1C8A00BE0933 /* SearchLoader.swift */; };
 		E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022BDFD27FBB206006C044E /* RemotePodcastLoader.swift */; };
-		E054E2B527F933DD00D955FE /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E054E2B427F933DD00D955FE /* FeedKit */; };
 		E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2B827F9385700D955FE /* HTTPClient.swift */; };
 		E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */; };
 		E05E21DD282C843800404B2A /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E21DC282C843800404B2A /* PersistentContainer.swift */; };
@@ -32,6 +29,8 @@
 		E091BF6C27F9339F00297C8A /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = E091BF6027F9339F00297C8A /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0D5548B27FE893A0050012F /* RemotePodcastItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */; };
 		E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */; };
+		E0DA18AA282F405400EF533A /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E0DA18A9282F405400EF533A /* FeedKit */; };
+		E0DA18AD282F460700EF533A /* NSSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DA18AC282F460700EF533A /* NSSetExtensions.swift */; };
 		E0DBE48627FDBE8C0079E445 /* RemotePodcastMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +50,6 @@
 		E01428E2282DE5B0006C52B2 /* MockPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPodcast.swift; sourceTree = "<group>"; };
 		E01729FA281F056200BE0933 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPrototypeApp.swift; sourceTree = "<group>"; };
-		E0172A00281F056200BE0933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E0172A03281F056200BE0933 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0172A0A281F081400BE0933 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		E0172A0D281F09DA00BE0933 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E0172A0F281F0A1200BE0933 /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
@@ -72,6 +69,7 @@
 		E091BF6A27F9339F00297C8A /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
 		E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastItem.swift; sourceTree = "<group>"; };
 		E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastEpisode.swift; sourceTree = "<group>"; };
+		E0DA18AC282F460700EF533A /* NSSetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSetExtensions.swift; sourceTree = "<group>"; };
 		E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E054E2B527F933DD00D955FE /* FeedKit in Frameworks */,
+				E0DA18AA282F405400EF533A /* FeedKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +103,6 @@
 		9649066128201171004A0F56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E0172A00281F056200BE0933 /* Assets.xcassets */,
-				E0172A02281F056200BE0933 /* Preview Content */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,7 +144,6 @@
 			children = (
 				E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */,
 				E0172A0A281F081400BE0933 /* TabBarView.swift */,
-				E0172A00281F056200BE0933 /* Assets.xcassets */,
 				E01428DD282DD8B4006C52B2 /* Library */,
 				E0172A02281F056200BE0933 /* Preview Content */,
 				E0172A0C281F09CD00BE0933 /* Search */,
@@ -160,7 +155,6 @@
 		E0172A02281F056200BE0933 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E0172A03281F056200BE0933 /* Preview Assets.xcassets */,
 				E01428E2282DE5B0006C52B2 /* MockPodcast.swift */,
 			);
 			path = "Preview Content";
@@ -231,6 +225,7 @@
 				E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */,
 				E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */,
 				E05E21DB282C841E00404B2A /* Core Data Store */,
+				E0DA18AB282F45F000EF533A /* Utilities */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -241,6 +236,14 @@
 				E091BF6A27F9339F00297C8A /* CoreTests.swift */,
 			);
 			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		E0DA18AB282F45F000EF533A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E0DA18AC282F460700EF533A /* NSSetExtensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +292,7 @@
 			);
 			name = Core;
 			packageProductDependencies = (
-				E054E2B427F933DD00D955FE /* FeedKit */,
+				E0DA18A9282F405400EF533A /* FeedKit */,
 			);
 			productName = Core;
 			productReference = E091BF5E27F9339F00297C8A /* Core.framework */;
@@ -363,8 +366,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0172A04281F056200BE0933 /* Preview Assets.xcassets in Resources */,
-				E0172A01281F056200BE0933 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +411,7 @@
 				E05E21DF282C862A00404B2A /* StorageProvider.swift in Sources */,
 				E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */,
 				E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */,
+				E0DA18AD282F460700EF533A /* NSSetExtensions.swift in Sources */,
 				E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */,
 				E05E21DD282C843800404B2A /* PersistentContainer.swift in Sources */,
 				E05E21E2282C88A600404B2A /* Subscriptions.xcdatamodeld in Sources */,
@@ -770,7 +772,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E054E2B427F933DD00D955FE /* FeedKit */ = {
+		E0DA18A9282F405400EF533A /* FeedKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E0A0180127F92A9A0063849A /* XCRemoteSwiftPackageReference "FeedKit" */;
 			productName = FeedKit;
