@@ -10,12 +10,12 @@ import Core
 
 @main
 struct iOSPrototypeApp: App {
-  let storageProvider = StorageProvider.shared
+  let subscriptionsService = SubscriptionsService()
 
   var body: some Scene {
     WindowGroup {
       TabBarView()
-        .environment(\.managedObjectContext, storageProvider.persistentContainer.viewContext)
+        .environment(\.managedObjectContext, subscriptionsService.viewContext)
     }
   }
 }

@@ -20,11 +20,11 @@ extension SearchDetailView {
     @Published private (set) var viewState: ViewState = .idle
 
     private let searchLoader: RemoteSearchService
-    private let storageProvider: StorageProvider
+    private let subscriptionsService: SubscriptionsService
 
-    init(searchLoader: RemoteSearchService, storageProvider: StorageProvider = StorageProvider.shared) {
+    init(searchLoader: RemoteSearchService, subscriptionsService: SubscriptionsService = SubscriptionsService()) {
       self.searchLoader = searchLoader
-      self.storageProvider = storageProvider
+      self.subscriptionsService = subscriptionsService
     }
 
     func load() async {
@@ -38,7 +38,7 @@ extension SearchDetailView {
     }
 
     func subscribe(to podcast: RemotePodcastItem) {
-      storageProvider.subscribe(to: podcast)
+      subscriptionsService.subscribe(to: podcast)
     }
   }
 }

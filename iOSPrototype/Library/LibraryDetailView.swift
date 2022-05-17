@@ -10,7 +10,7 @@ import Core
 
 struct LibraryDetailView: View {
   let podcast: ManagedPodcast
-  private let storageProvider = StorageProvider.shared
+  private let subscriptionsService = SubscriptionsService()
   private let didTapUnsubscribe: () -> Void
 
   init(podcast: ManagedPodcast, unsubscribeHandler: @escaping () -> Void) {
@@ -32,7 +32,7 @@ struct LibraryDetailView: View {
     .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {
         Button {
-          storageProvider.unsubscribe(from: podcast)
+          subscriptionsService.unsubscribe(from: podcast)
           didTapUnsubscribe()
         } label: {
           Text("Unsubscribe")

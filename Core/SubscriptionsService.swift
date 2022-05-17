@@ -7,9 +7,18 @@
 
 
 import Foundation
+import CoreData
 
 public class SubscriptionsService {
   private let storageProvider: StorageProvider
+
+  public var viewContext: NSManagedObjectContext {
+    return storageProvider.persistentContainer.viewContext
+  }
+
+  public init() {
+    self.storageProvider = StorageProvider.shared
+  }
 
   init(storageProvider: StorageProvider = StorageProvider.shared) {
     self.storageProvider = storageProvider

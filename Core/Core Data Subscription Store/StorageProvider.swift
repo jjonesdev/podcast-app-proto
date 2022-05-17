@@ -7,9 +7,9 @@
 
 import CoreData
 
-public class StorageProvider {
-  public static let shared = StorageProvider()
-  public let persistentContainer: NSPersistentContainer
+class StorageProvider {
+  static let shared = StorageProvider()
+  let persistentContainer: NSPersistentContainer
 
   private init() {
     persistentContainer = PersistentContainer(name: "CoreDataSubscriptionStore")
@@ -21,7 +21,7 @@ public class StorageProvider {
     }
   }
 
-  public func subscribe(to remotePodcast: RemotePodcastItem) {
+  func subscribe(to remotePodcast: RemotePodcastItem) {
     let podcast = ManagedPodcast(context: persistentContainer.viewContext)
     podcast.id = remotePodcast.id
     podcast.title = remotePodcast.title
@@ -46,7 +46,7 @@ public class StorageProvider {
     }
   }
 
-  public func unsubscribe(from podcast: ManagedPodcast) {
+  func unsubscribe(from podcast: ManagedPodcast) {
     persistentContainer.viewContext.delete(podcast)
 
     do {
@@ -57,7 +57,7 @@ public class StorageProvider {
     }
   }
 
-  public func getAllSubscriptions() -> [ManagedPodcast] {
+  func getAllSubscriptions() -> [ManagedPodcast] {
     let fetchRequest: NSFetchRequest<ManagedPodcast> = ManagedPodcast.fetchRequest()
 
     do {

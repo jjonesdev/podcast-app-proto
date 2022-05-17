@@ -28,12 +28,12 @@ struct LibraryView: View {
       .navigationTitle("Library")
     }
     .onAppear {
-      viewModel.getSubscriptions()
+      viewModel.loadSubscriptions()
     }
   }
 
   func didTapUnsubscribe() {
-    viewModel.getSubscriptions()
+    viewModel.loadSubscriptions()
   }
 }
 
@@ -46,13 +46,13 @@ struct LibraryView: View {
   final class LibraryViewModel: ObservableObject {
     @Published private (set) var podcasts: [ManagedPodcast] = []
 
-    private let storageProvider: StorageProvider
+    private let subscriptionsService: SubscriptionsService
 
-    init(storageProvider: StorageProvider = StorageProvider.shared) {
-      self.storageProvider = storageProvider
+    init(subscriptionsService: SubscriptionsService = SubscriptionsService()) {
+      self.subscriptionsService = subscriptionsService
     }
 
-    func getSubscriptions() {
-      self.podcasts = storageProvider.getAllSubscriptions()
+    func loadSubscriptions() {
+      self.podcasts = subscriptionsService.load()
     }
   }
