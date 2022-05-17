@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96D0EE852833E08F004AB371 /* SubscriptionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D0EE842833E08F004AB371 /* SubscriptionsService.swift */; };
 		E01428DF282DD8C9006C52B2 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428DE282DD8C9006C52B2 /* LibraryView.swift */; };
 		E01428E1282DE137006C52B2 /* LibraryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428E0282DE137006C52B2 /* LibraryDetailView.swift */; };
 		E01428E3282DE5B0006C52B2 /* MockPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428E2282DE5B0006C52B2 /* MockPodcast.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96D0EE842833E08F004AB371 /* SubscriptionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsService.swift; sourceTree = "<group>"; };
 		E01428DE282DD8C9006C52B2 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		E01428E0282DE137006C52B2 /* LibraryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDetailView.swift; sourceTree = "<group>"; };
 		E01428E2282DE5B0006C52B2 /* MockPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPodcast.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				E0C3D44828333B86004E9C60 /* HTTP Client */,
 				E0C3D44928333BA4004E9C60 /* Remote Search Loader */,
 				E0DA18AB282F45F000EF533A /* Utilities */,
+				96D0EE842833E08F004AB371 /* SubscriptionsService.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D0EE852833E08F004AB371 /* SubscriptionsService.swift in Sources */,
 				E05E21DF282C862A00404B2A /* StorageProvider.swift in Sources */,
 				E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */,
 				E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */,
