@@ -9,16 +9,16 @@ import SwiftUI
 import Core
 
 struct LibraryDetailView: View {
-  let podcast: Podcast
+  let podcast: ManagedPodcast
   private let storageProvider = StorageProvider.shared
   private let didTapUnsubscribe: () -> Void
 
-  init(podcast: Podcast, unsubscribeHandler: @escaping () -> Void) {
+  init(podcast: ManagedPodcast, unsubscribeHandler: @escaping () -> Void) {
     self.podcast = podcast
     self.didTapUnsubscribe = unsubscribeHandler
   }
 
-  var episodes: [Episode] {
+  var episodes: [ManagedEpisode] {
     podcast.episodes?.toArray() ?? []
   }
 
@@ -44,7 +44,7 @@ struct LibraryDetailView: View {
 
 struct LibraryDetailView_Previews: PreviewProvider {
   static var previews: some View {
-    LibraryDetailView(podcast: Podcast.mock) { }
+    LibraryDetailView(podcast: ManagedPodcast.mock) { }
   }
 }
 

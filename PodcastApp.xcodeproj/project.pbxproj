@@ -23,7 +23,7 @@
 		E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E2BA27F93A3D00D955FE /* URLSessionHTTPClient.swift */; };
 		E05E21DD282C843800404B2A /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E21DC282C843800404B2A /* PersistentContainer.swift */; };
 		E05E21DF282C862A00404B2A /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E21DE282C862A00404B2A /* StorageProvider.swift */; };
-		E05E21E2282C88A600404B2A /* Subscriptions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E05E21E0282C88A600404B2A /* Subscriptions.xcdatamodeld */; };
+		E05E21E2282C88A600404B2A /* CoreDataSubscriptionStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E05E21E0282C88A600404B2A /* CoreDataSubscriptionStore.xcdatamodeld */; };
 		E091BF6627F9339F00297C8A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; };
 		E091BF6B27F9339F00297C8A /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BF6A27F9339F00297C8A /* CoreTests.swift */; };
 		E091BF6C27F9339F00297C8A /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = E091BF6027F9339F00297C8A /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -209,7 +209,7 @@
 			children = (
 				E05E21DC282C843800404B2A /* PersistentContainer.swift */,
 				E05E21DE282C862A00404B2A /* StorageProvider.swift */,
-				E05E21E0282C88A600404B2A /* Subscriptions.xcdatamodeld */,
+				E05E21E0282C88A600404B2A /* CoreDataSubscriptionStore.xcdatamodeld */,
 			);
 			path = "Core Data Store";
 			sourceTree = "<group>";
@@ -414,7 +414,7 @@
 				E0DA18AD282F460700EF533A /* NSSetExtensions.swift in Sources */,
 				E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */,
 				E05E21DD282C843800404B2A /* PersistentContainer.swift in Sources */,
-				E05E21E2282C88A600404B2A /* Subscriptions.xcdatamodeld in Sources */,
+				E05E21E2282C88A600404B2A /* CoreDataSubscriptionStore.xcdatamodeld in Sources */,
 				E022BDFE27FBB206006C044E /* RemotePodcastLoader.swift in Sources */,
 				E0D5548B27FE893A0050012F /* RemotePodcastItem.swift in Sources */,
 				E0DBE48627FDBE8C0079E445 /* RemotePodcastMapper.swift in Sources */,
@@ -557,7 +557,6 @@
 		E0172A06281F056200BE0933 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -586,7 +585,6 @@
 		E0172A07281F056200BE0933 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -780,13 +778,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		E05E21E0282C88A600404B2A /* Subscriptions.xcdatamodeld */ = {
+		E05E21E0282C88A600404B2A /* CoreDataSubscriptionStore.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				E05E21E1282C88A600404B2A /* CoreDataStore.xcdatamodel */,
 			);
 			currentVersion = E05E21E1282C88A600404B2A /* CoreDataStore.xcdatamodel */;
-			path = Subscriptions.xcdatamodeld;
+			path = CoreDataSubscriptionStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

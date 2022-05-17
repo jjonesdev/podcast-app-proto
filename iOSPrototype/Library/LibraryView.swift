@@ -44,7 +44,7 @@ struct LibraryView: View {
   }
 
   final class LibraryViewModel: ObservableObject {
-    @Published private (set) var podcasts: [Podcast] = []
+    @Published private (set) var podcasts: [ManagedPodcast] = []
 
     private let storageProvider: StorageProvider
 

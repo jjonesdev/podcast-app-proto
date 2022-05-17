@@ -7,9 +7,9 @@
 
 import Core
 
-extension Podcast {
-  static var mock: Podcast {
-    let podcast = Podcast()
+extension ManagedPodcast {
+  static var mock: ManagedPodcast {
+    let podcast = ManagedPodcast()
     podcast.title = "Stacktrace"
     podcast.subtitle = "A podcast about life and technology from two developers perspective."
     podcast.id = "any-id"

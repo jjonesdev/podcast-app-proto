@@ -12,7 +12,7 @@ public class StorageProvider {
   public let persistentContainer: NSPersistentContainer
 
   private init() {
-    persistentContainer = PersistentContainer(name: "Subscriptions")
+    persistentContainer = PersistentContainer(name: "CoreDataSubscriptionStore")
 
     persistentContainer.loadPersistentStores { description, error in
       if let error = error {
@@ -22,14 +22,14 @@ public class StorageProvider {
   }
 
   public func subscribe(to remotePodcast: RemotePodcastItem) {
-    let podcast = Podcast(context: persistentContainer.viewContext)
+    let podcast = ManagedPodcast(context: persistentContainer.viewContext)
     podcast.id = remotePodcast.id
     podcast.title = remotePodcast.title
     podcast.subtitle = remotePodcast.description
     podcast.artworkURL = remotePodcast.artworkURL.absoluteString
 
     for remoteEpisode in remotePodcast.episodes {
-      let episode = Episode(context: persistentContainer.viewContext)
+      let episode = ManagedEpisode(context: persistentContainer.viewContext)
       episode.id = remoteEpisode.id
       episode.title = remoteEpisode.title
       episode.subtitle = remoteEpisode.description
@@ -46,7 +46,7 @@ public class StorageProvider {
     }
   }
 
-  public func unsubscribe(from podcast: Podcast) {
+  public func unsubscribe(from podcast: ManagedPodcast) {
     persistentContainer.viewContext.delete(podcast)
 
     do {
@@ -57,8 +57,8 @@ public class StorageProvider {
     }
   }
 
-  public func getAllSubscriptions() -> [Podcast] {
-    let fetchRequest: NSFetchRequest<Podcast> = Podcast.fetchRequest()
+  public func getAllSubscriptions() -> [ManagedPodcast] {
+    let fetchRequest: NSFetchRequest<ManagedPodcast> = ManagedPodcast.fetchRequest()
 
     do {
       return try persistentContainer.viewContext.fetch(fetchRequest)
