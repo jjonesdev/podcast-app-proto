@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="CoreDataSubscriptionStore">
     <entity name="ManagedEpisode" representedClassName=".ManagedEpisode" syncable="YES" codeGenerationType="class">
-        <attribute name="audioType" optional="YES" attributeType="String"/>
-        <attribute name="audioURL" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="String"/>
-        <attribute name="length" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="subtitle" optional="YES" attributeType="String"/>
-        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="audioType" attributeType="String"/>
+        <attribute name="audioURL" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="length" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="subtitle" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
         <relationship name="podcast" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ManagedPodcast" inverseName="episodes" inverseEntity="ManagedPodcast"/>
     </entity>
     <entity name="ManagedPodcast" representedClassName=".ManagedPodcast" syncable="YES" codeGenerationType="class">
-        <attribute name="artworkURL" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="String"/>
-        <attribute name="subtitle" optional="YES" attributeType="String"/>
-        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="artworkURL" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="subtitle" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
         <relationship name="episodes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ManagedEpisode" inverseName="podcast" inverseEntity="ManagedEpisode"/>
     </entity>
     <elements>
