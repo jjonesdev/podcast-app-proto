@@ -36,6 +36,7 @@ class StorageProvider {
       episode.audioURL = remoteEpisode.audioURL.absoluteString
       episode.length = remoteEpisode.length
       episode.audioType = remoteEpisode.audioType
+      episode.publishDate = remoteEpisode.publishDate
       podcast.addToEpisodes(episode)
     }
 

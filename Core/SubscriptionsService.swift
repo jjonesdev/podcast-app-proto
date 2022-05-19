@@ -38,6 +38,7 @@ public class SubscriptionsService {
 
   private func map(_ managedPodcasts: [ManagedPodcast]) -> Set<Podcast> {
     var podcasts: Set<Podcast> = []
+    let episodeOrder = NSSortDescriptor(key: "publishDate", ascending: false)
 
     for managedPodcast in managedPodcasts {
       guard
@@ -45,16 +46,30 @@ public class SubscriptionsService {
         let title = managedPodcast.title,
         let subtitle = managedPodcast.subtitle,
         let artworkURL = managedPodcast.artworkURL,
-        let episodes: [Episode] = managedPodcast.episodes?.toArray()
+        let episodes = managedPodcast.episodes
       else { return [] }
+
+      let sortedEpisodes = episodes.sortedArray(using: [episodeOrder]).map { value -> Episode in
+        let e = value as! ManagedEpisode
+        return Episode(
+          id: e.id!,
+          title: e.title!,
+          subtitle: e.subtitle!,
+          length: Int(e.length),
+          audioURL: URL(string: e.audioURL!)!,
+          audioType: e.audioType!,
+          publishDate: e.publishDate!
+        )
+      }
 
       let podcast = Podcast(
         id: id,
         title: title,
         subtitle: subtitle,
         artworkURL: URL(string: artworkURL),
-        episodes: Set(episodes.map { $0 })
+        episodes: Set<Episode>(sortedEpisodes.map { $0})
       )
+
       podcasts.insert(podcast)
     }
 

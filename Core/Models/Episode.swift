@@ -15,8 +15,20 @@ public struct Episode {
   public let length: Int
   public let audioURL: URL
   public let audioType: String
+  public let publishDate: Date
+
+  public init(id: String, title: String, subtitle: String, length: Int, audioURL: URL, audioType: String, publishDate: Date) {
+    self.id = id
+    self.title = title
+    self.subtitle = subtitle
+    self.length = length
+    self.audioURL = audioURL
+    self.audioType = audioType
+    self.publishDate = publishDate
+  }
 }
 
+// MARK: - Hashable Conformance
 extension Episode: Hashable {
   public static func == (lhs: Episode, rhs: Episode) -> Bool {
     return lhs.id == rhs.id &&
@@ -24,6 +36,18 @@ extension Episode: Hashable {
     lhs.subtitle == rhs.subtitle &&
     lhs.length == rhs.length &&
     lhs.audioURL == rhs.audioURL &&
-    lhs.audioType == rhs.audioType
+    lhs.audioType == rhs.audioType &&
+    lhs.publishDate == rhs.publishDate
+  }
+}
+
+// MARK: - Identifiable Conformance
+//  - Episode automatically conforms to `Identifiable` because it has an `id` property
+extension Episode: Identifiable {}
+
+// MARK: - Comparable Conformance
+extension Episode: Comparable {
+  public static func < (lhs: Episode, rhs: Episode) -> Bool {
+    rhs.publishDate < lhs.publishDate
   }
 }

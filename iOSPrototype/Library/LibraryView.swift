@@ -16,12 +16,9 @@ struct LibraryView: View {
       List {
         ForEach(viewModel.podcasts) { podcast in
           NavigationLink {
-            LibraryDetailView(
-              podcast: podcast,
-              unsubscribeHandler: didTapUnsubscribe
-            )
+            makeLibraryDetailView(for: podcast)
           } label: {
-            Text(podcast.title ?? "Missing Title")
+            Text(podcast.title)
           }
         }
       }
@@ -35,6 +32,12 @@ struct LibraryView: View {
   func didTapUnsubscribe() {
     viewModel.loadSubscriptions()
   }
+
+  @ViewBuilder
+  func makeLibraryDetailView(for podcast: Podcast) -> some View {
+    let viewModel = LibraryDetailView.ViewModel(podcast: podcast)
+    LibraryDetailView(viewModel: viewModel, unsubscribeHandler: didTapUnsubscribe)
+  }
 }
 
   struct LibraryView_Previews: PreviewProvider {
@@ -44,7 +47,7 @@ struct LibraryView: View {
   }
 
   final class LibraryViewModel: ObservableObject {
-    @Published private (set) var podcasts: [ManagedPodcast] = []
+    @Published private (set) var podcasts: [Podcast] = []
 
     private let subscriptionsService: SubscriptionsService
 
@@ -53,6 +56,6 @@ struct LibraryView: View {
     }
 
     func loadSubscriptions() {
-      self.podcasts = subscriptionsService.load()
+      self.podcasts = subscriptionsService.load().sorted()
     }
   }

@@ -7,14 +7,9 @@
 
 import Core
 
-extension ManagedPodcast {
-  static var mock: ManagedPodcast {
-    let podcast = ManagedPodcast()
-    podcast.title = "Stacktrace"
-    podcast.subtitle = "A podcast about life and technology from two developers perspective."
-    podcast.id = "any-id"
-
-    return podcast
+extension Podcast {
+  static var mock: Podcast {
+    return Podcast(id: "any-id", title: "Podcast Title", subtitle: "Podcast Subtitle", artworkURL: URL(string: "https://any-url.com"), episodes: [])
   }
 }
 

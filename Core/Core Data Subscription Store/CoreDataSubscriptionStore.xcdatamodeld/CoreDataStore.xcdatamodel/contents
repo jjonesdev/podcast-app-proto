@@ -5,6 +5,7 @@
         <attribute name="audioURL" attributeType="String"/>
         <attribute name="id" attributeType="String"/>
         <attribute name="length" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="publishDate" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="subtitle" attributeType="String"/>
         <attribute name="title" attributeType="String"/>
         <relationship name="podcast" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ManagedPodcast" inverseName="episodes" inverseEntity="ManagedPodcast"/>
@@ -17,7 +18,7 @@
         <relationship name="episodes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ManagedEpisode" inverseName="podcast" inverseEntity="ManagedEpisode"/>
     </entity>
     <elements>
-        <element name="ManagedEpisode" positionX="175.45703125" positionY="2.92578125" width="128" height="134"/>
+        <element name="ManagedEpisode" positionX="175.45703125" positionY="2.92578125" width="128" height="149"/>
         <element name="ManagedPodcast" positionX="-14.70703125" positionY="4.625" width="135.35546875" height="104"/>
     </elements>
 </model>

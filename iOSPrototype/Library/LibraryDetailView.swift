@@ -9,30 +9,27 @@ import SwiftUI
 import Core
 
 struct LibraryDetailView: View {
-  let podcast: ManagedPodcast
+  @ObservedObject private var viewModel: ViewModel
+
   private let subscriptionsService = SubscriptionsService()
   private let didTapUnsubscribe: () -> Void
 
-  init(podcast: ManagedPodcast, unsubscribeHandler: @escaping () -> Void) {
-    self.podcast = podcast
+  init(viewModel: ViewModel, unsubscribeHandler: @escaping () -> Void) {
+    self.viewModel = viewModel
     self.didTapUnsubscribe = unsubscribeHandler
-  }
-
-  var episodes: [ManagedEpisode] {
-    podcast.episodes?.toArray() ?? []
   }
 
   var body: some View {
     List {
-      ForEach(episodes) { episode in
-        Text(episode.title ?? "n/a")
+      ForEach(viewModel.episodes) { episode in
+        Text(episode.title)
       }
     }
-    .navigationTitle(podcast.title ?? "")
+    .navigationTitle(viewModel.podcastTitle)
     .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {
         Button {
-          subscriptionsService.unsubscribe(from: podcast)
+//          subscriptionsService.unsubscribe(from: podcast)
           didTapUnsubscribe()
         } label: {
           Text("Unsubscribe")
@@ -44,7 +41,24 @@ struct LibraryDetailView: View {
 
 struct LibraryDetailView_Previews: PreviewProvider {
   static var previews: some View {
-    LibraryDetailView(podcast: ManagedPodcast.mock) { }
+    LibraryDetailView(viewModel: .init(podcast: Podcast.mock)) { }
+  }
+}
+
+extension LibraryDetailView {
+  final class ViewModel: ObservableObject {
+    private let podcast: Podcast
+
+    @Published private(set) var episodes: [Episode] = []
+
+    var podcastTitle: String {
+      podcast.title
+    }
+
+    init(podcast: Podcast) {
+      self.podcast = podcast
+      self.episodes = podcast.episodes.sorted()
+    }
   }
 }
 

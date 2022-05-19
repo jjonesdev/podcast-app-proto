@@ -15,6 +15,7 @@ public struct RemotePodcastEpisode: Identifiable {
     case missingAudioURL
     case missingLength
     case missingAudioType
+    case missingPublishDate
   }
   
   public let id: String
@@ -23,6 +24,7 @@ public struct RemotePodcastEpisode: Identifiable {
   public let audioURL: URL
   public let length: Int64
   public let audioType: String?
+  public let publishDate: Date
   
   public init(episode: RSSFeedItem) throws {
     self.id = episode.guid?.value ?? UUID().uuidString
@@ -61,6 +63,12 @@ public struct RemotePodcastEpisode: Identifiable {
       self.audioType = audioType
     } else {
       self.audioType = nil
+    }
+
+    if let publishDate = episode.pubDate {
+      self.publishDate = publishDate
+    } else {
+      throw Error.missingPublishDate
     }
   }
 }
