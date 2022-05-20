@@ -33,7 +33,6 @@
 		E0D5548B27FE893A0050012F /* RemotePodcastItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */; };
 		E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */; };
 		E0DA18AA282F405400EF533A /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = E0DA18A9282F405400EF533A /* FeedKit */; };
-		E0DA18AD282F460700EF533A /* NSSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DA18AC282F460700EF533A /* NSSetExtensions.swift */; };
 		E0DBE48627FDBE8C0079E445 /* RemotePodcastMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,6 @@
 		E09A6F07283484F400C0CAB7 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		E0D5548A27FE893A0050012F /* RemotePodcastItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastItem.swift; sourceTree = "<group>"; };
 		E0D5548C27FE895E0050012F /* RemotePodcastEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastEpisode.swift; sourceTree = "<group>"; };
-		E0DA18AC282F460700EF533A /* NSSetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSetExtensions.swift; sourceTree = "<group>"; };
 		E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePodcastMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,7 +227,6 @@
 				E0C3D44828333B86004E9C60 /* HTTP Client */,
 				E09A6F04283484B500C0CAB7 /* Models */,
 				E0C3D44928333BA4004E9C60 /* Remote Search Loader */,
-				E0DA18AB282F45F000EF533A /* Utilities */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -269,14 +266,6 @@
 				E0DBE48527FDBE8C0079E445 /* RemotePodcastMapper.swift */,
 			);
 			path = "Remote Search Loader";
-			sourceTree = "<group>";
-		};
-		E0DA18AB282F45F000EF533A /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				E0DA18AC282F460700EF533A /* NSSetExtensions.swift */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,7 +435,6 @@
 				E09A6F06283484C100C0CAB7 /* Podcast.swift in Sources */,
 				E054E2BB27F93A3D00D955FE /* URLSessionHTTPClient.swift in Sources */,
 				E054E2B927F9385700D955FE /* HTTPClient.swift in Sources */,
-				E0DA18AD282F460700EF533A /* NSSetExtensions.swift in Sources */,
 				E0D5548D27FE895E0050012F /* RemotePodcastEpisode.swift in Sources */,
 				E09A6F08283484F400C0CAB7 /* Episode.swift in Sources */,
 				E05E21DD282C843800404B2A /* PersistentContainer.swift in Sources */,
