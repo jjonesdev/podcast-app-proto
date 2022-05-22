@@ -21,7 +21,7 @@ class StorageProvider {
     }
   }
 
-  func subscribe(to remotePodcast: RemotePodcastItem) {
+  func create(_ remotePodcast: RemotePodcastItem) {
     let podcast = ManagedPodcast(context: persistentContainer.viewContext)
     podcast.id = remotePodcast.id
     podcast.title = remotePodcast.title
@@ -39,7 +39,7 @@ class StorageProvider {
       episode.publishDate = remoteEpisode.publishDate
       podcast.addToEpisodes(episode)
     }
-
+    
     do {
       try persistentContainer.viewContext.save()
     } catch {
@@ -47,7 +47,7 @@ class StorageProvider {
     }
   }
 
-  func unsubscribe(from podcast: ManagedPodcast) {
+  func delete(_ podcast: ManagedPodcast) {
     persistentContainer.viewContext.delete(podcast)
 
     do {
@@ -69,4 +69,9 @@ class StorageProvider {
   }
 }
 
-
+public extension ManagedPodcast {
+  static var subscriptions: NSFetchRequest<ManagedPodcast> {
+    let request: NSFetchRequest<ManagedPodcast> = ManagedPodcast.fetchRequest()
+    return request
+  }
+}
