@@ -22,7 +22,7 @@ extension SearchDetailView {
     private let searchLoader: RemoteSearchService
     private let storageProvider: StorageProvider
 
-    init(searchLoader: RemoteSearchService, storageProvider: StorageProvider = StorageProvider.shared) {
+    init(searchLoader: RemoteSearchService, storageProvider: StorageProvider) {
       self.searchLoader = searchLoader
       self.storageProvider = storageProvider
     }

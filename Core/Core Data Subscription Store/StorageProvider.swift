@@ -8,10 +8,9 @@
 import CoreData
 
 public class StorageProvider {
-  public static let shared = StorageProvider()
   public let persistentContainer: NSPersistentContainer
 
-  private init() {
+  public init() {
     persistentContainer = PersistentContainer(name: "CoreDataSubscriptionStore")
 
     persistentContainer.loadPersistentStores { description, error in

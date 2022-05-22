@@ -10,6 +10,11 @@ import Core
 
 struct SearchListView: View {
   private let store: [SearchRowModel] = SearchRowModel.prototypeModels
+  private let storageProvider: StorageProvider
+
+  init(storageProvider: StorageProvider) {
+    self.storageProvider = storageProvider
+  }
 
   var body: some View {
     List {
@@ -22,7 +27,7 @@ struct SearchListView: View {
 
   @MainActor private func makeRow(from model: SearchRowModel) -> some View {
     let loader = SearchLoader(endpoint: model.endpoint)
-    let viewModel = SearchDetailView.ViewModel(searchLoader: loader)
+    let viewModel = SearchDetailView.ViewModel(searchLoader: loader, storageProvider: storageProvider)
 
     return NavigationLink(model.title) {
       SearchDetailView(viewModel: viewModel)
@@ -34,6 +39,6 @@ struct SearchListView: View {
 
 struct SearchList_Previews: PreviewProvider {
   static var previews: some View {
-    SearchListView()
+    SearchListView(storageProvider: StorageProvider())
   }
 }

@@ -10,11 +10,11 @@ import Core
 
 @main
 struct iOSPrototypeApp: App {
-  let storageProvider = StorageProvider.shared
+  @State var storageProvider = StorageProvider()
 
   var body: some Scene {
     WindowGroup {
-      TabBarView()
+      TabBarView(storageProvider: storageProvider)
         .environment(\.managedObjectContext, storageProvider.persistentContainer.viewContext)
     }
   }

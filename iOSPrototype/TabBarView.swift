@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Core
 
 struct TabBarView: View {
+  let storageProvider: StorageProvider
+
   var body: some View {
     TabView {
       Text("Library View")
@@ -15,7 +18,7 @@ struct TabBarView: View {
           Image(systemName: "square.stack")
           Text("Library")
         }
-      SearchView()
+      SearchView(storageProvider: storageProvider)
         .tabItem {
           Image(systemName: "magnifyingglass")
           Text("Searh View")
@@ -26,6 +29,6 @@ struct TabBarView: View {
 
 struct TabBarView_Previews: PreviewProvider {
   static var previews: some View {
-    TabBarView()
+    TabBarView(storageProvider: StorageProvider())
   }
 }

@@ -6,17 +6,20 @@
 //
 
 import SwiftUI
+import Core
 
 struct SearchView: View {
+  let storageProvider: StorageProvider
+
   var body: some View {
     NavigationView {
-      SearchListView()
+      SearchListView(storageProvider: storageProvider)
     }
   }
 }
 
 struct SearchView_Previews: PreviewProvider {
   static var previews: some View {
-    SearchView()
+    SearchView(storageProvider: StorageProvider())
   }
 }
