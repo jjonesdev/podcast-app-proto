@@ -10,7 +10,7 @@
         <attribute name="title" attributeType="String"/>
         <relationship name="podcast" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ManagedPodcast" inverseName="episodes" inverseEntity="ManagedPodcast"/>
     </entity>
-    <entity name="ManagedPodcast" representedClassName=".ManagedPodcast" syncable="YES" codeGenerationType="class">
+    <entity name="ManagedPodcast" representedClassName=".ManagedPodcast" syncable="YES">
         <attribute name="artworkURL" attributeType="String"/>
         <attribute name="id" attributeType="String"/>
         <attribute name="subtitle" attributeType="String"/>

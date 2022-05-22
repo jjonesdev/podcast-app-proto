@@ -36,7 +36,7 @@ public class StorageProvider {
       episode.length = remoteEpisode.length
       episode.audioType = remoteEpisode.audioType
       episode.publishDate = remoteEpisode.publishDate
-      podcast.addToEpisodes(episode)
+      podcast.episodes.insert(episode)
     }
     
     do {

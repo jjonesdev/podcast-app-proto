@@ -13,7 +13,7 @@ struct TabBarView: View {
 
   var body: some View {
     TabView {
-      Text("Library View")
+      LibraryView(subscriptionsProvider: SubscriptionsProvider(storageProvider: storageProvider))
         .tabItem {
           Image(systemName: "square.stack")
           Text("Library")
