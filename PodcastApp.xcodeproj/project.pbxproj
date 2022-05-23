@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		967A34DB283C0C0B007551E4 /* ManagedEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A34DA283C0C0B007551E4 /* ManagedEpisode.swift */; };
+		967A34DE283C1408007551E4 /* CompactPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A34DD283C1408007551E4 /* CompactPlayerView.swift */; };
 		E01428E3282DE5B0006C52B2 /* MockPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428E2282DE5B0006C52B2 /* MockPodcast.swift */; };
 		E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */; };
 		E0172A0B281F081400BE0933 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0A281F081400BE0933 /* TabBarView.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		967A34DA283C0C0B007551E4 /* ManagedEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedEpisode.swift; sourceTree = "<group>"; };
+		967A34DD283C1408007551E4 /* CompactPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactPlayerView.swift; sourceTree = "<group>"; };
 		E01428E2282DE5B0006C52B2 /* MockPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPodcast.swift; sourceTree = "<group>"; };
 		E01729FA281F056200BE0933 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPrototypeApp.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		967A34DC283C13F9007551E4 /* Player View */ = {
+			isa = PBXGroup;
+			children = (
+				967A34DD283C1408007551E4 /* CompactPlayerView.swift */,
+			);
+			path = "Player View";
+			sourceTree = "<group>";
+		};
 		E0131CE627F928C0002C6C7C = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 				E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */,
 				E0172A0A281F081400BE0933 /* TabBarView.swift */,
 				E0F010CD283AB24C008B1A92 /* Library View */,
+				967A34DC283C13F9007551E4 /* Player View */,
 				E0172A02281F056200BE0933 /* Preview Content */,
 				E0172A0C281F09CD00BE0933 /* Search */,
 				9649066128201171004A0F56 /* Supporting Files */,
@@ -435,6 +446,7 @@
 				E0172A16281F106900BE0933 /* SearchDetailView.swift in Sources */,
 				E0172A12281F0D0600BE0933 /* SearchRowModel.swift in Sources */,
 				E0F010D1283AB50F008B1A92 /* LibraryDetailView.swift in Sources */,
+				967A34DE283C1408007551E4 /* CompactPlayerView.swift in Sources */,
 				E0F010CF283AB260008B1A92 /* LibraryView.swift in Sources */,
 				E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */,
 			);

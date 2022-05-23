@@ -24,6 +24,12 @@ struct TabBarView: View {
           Text("Searh View")
         }
     }
+    .overlay(alignment: .bottom) {
+      CompactPlayerView()
+        .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 50)
+        .background(.ultraThickMaterial)
+        .padding(.bottom, 49)
+    }
   }
 }
 
