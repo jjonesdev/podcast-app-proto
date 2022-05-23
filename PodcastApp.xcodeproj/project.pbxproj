@@ -204,7 +204,7 @@
 		E05E21DB282C841E00404B2A /* Core Data Subscription Store */ = {
 			isa = PBXGroup;
 			children = (
-				E0F010C9283AAF59008B1A92 /* ManagedPodcast.swift */,
+				E0F010D2283ABEEF008B1A92 /* Models */,
 				E05E21DC282C843800404B2A /* PersistentContainer.swift */,
 				E05E21DE282C862A00404B2A /* StorageProvider.swift */,
 				E0F010CB283AB17E008B1A92 /* SubscriptionsProvider.swift */,
@@ -269,6 +269,14 @@
 				E0F010D0283AB50F008B1A92 /* LibraryDetailView.swift */,
 			);
 			path = "Library View";
+			sourceTree = "<group>";
+		};
+		E0F010D2283ABEEF008B1A92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0F010C9283AAF59008B1A92 /* ManagedPodcast.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -13,9 +13,13 @@ public struct Podcast {
   public let title: String
   public let subtitle: String
   public let artworkURL: URL?
-  public let episodes: Set<Episode>
+  public let episodes: [Episode]
 
-  public init(id: String, title: String, subtitle: String, artworkURL: URL?, episodes: Set<Episode>) {
+  public var sortedEpisodes: [Episode] {
+    return episodes.sorted()
+  }
+
+  public init(id: String, title: String, subtitle: String, artworkURL: URL?, episodes: [Episode]) {
     self.id = id
     self.title = title
     self.subtitle = subtitle

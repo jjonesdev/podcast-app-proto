@@ -56,14 +56,4 @@ public class StorageProvider {
       print("Failed to save context: \(error)")
     }
   }
-
-  public func getAllSubscriptions() -> [ManagedPodcast] {
-    let fetchRequest: NSFetchRequest<ManagedPodcast> = ManagedPodcast.fetchRequest()
-
-    do {
-      return try persistentContainer.viewContext.fetch(fetchRequest)
-    } catch {
-      return []
-    }
-  }
 }

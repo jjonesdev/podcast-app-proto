@@ -28,7 +28,11 @@ public class SubscriptionsProvider: NSObject, ObservableObject {
     super.init()
 
     fetchedResultsController.delegate = self
-    try! fetchedResultsController.performFetch()
+    do {
+      try fetchedResultsController.performFetch()
+    } catch {
+      print("Failed to perform fetch: \(error)")
+    }
   }
 
   public func numberofItemsInSection(_ section: Int) -> Int {
@@ -38,6 +42,28 @@ public class SubscriptionsProvider: NSObject, ObservableObject {
 
   public func object(at indexPath: IndexPath) -> ManagedPodcast {
     return fetchedResultsController.object(at: indexPath)
+  }
+
+  public func object(at indexPath: IndexPath) -> Podcast {
+    let managedPodcast = fetchedResultsController.object(at: indexPath)
+
+    return Podcast(
+      id: managedPodcast.id,
+      title: managedPodcast.title,
+      subtitle: managedPodcast.subtitle,
+      artworkURL: URL(string: managedPodcast.artworkURL),
+      episodes: managedPodcast.sortedEpisodes.map {
+        return Episode(
+          id: $0.id!,
+          title: $0.title!,
+          subtitle: $0.subtitle!,
+          length: $0.length,
+          audioURL: URL(string: $0.audioURL!)!,
+          audioType: $0.audioType!,
+          publishDate: $0.publishDate!
+        )
+      }
+    )
   }
 }
 
