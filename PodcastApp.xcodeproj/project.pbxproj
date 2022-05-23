@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		96100423283C1C1F00F2A7F9 /* EpisodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96100422283C1C1F00F2A7F9 /* EpisodeDetailView.swift */; };
 		96100425283C21C700F2A7F9 /* MockEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96100424283C21C700F2A7F9 /* MockEpisode.swift */; };
+		96100427283C24EC00F2A7F9 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96100426283C24EC00F2A7F9 /* PlayerManager.swift */; };
 		967A34DB283C0C0B007551E4 /* ManagedEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A34DA283C0C0B007551E4 /* ManagedEpisode.swift */; };
 		967A34DE283C1408007551E4 /* CompactPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A34DD283C1408007551E4 /* CompactPlayerView.swift */; };
 		E01428E3282DE5B0006C52B2 /* MockPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428E2282DE5B0006C52B2 /* MockPodcast.swift */; };
@@ -54,6 +55,8 @@
 /* Begin PBXFileReference section */
 		96100422283C1C1F00F2A7F9 /* EpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailView.swift; sourceTree = "<group>"; };
 		96100424283C21C700F2A7F9 /* MockEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEpisode.swift; sourceTree = "<group>"; };
+		96100426283C24EC00F2A7F9 /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		96100428283C29F300F2A7F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		967A34DA283C0C0B007551E4 /* ManagedEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedEpisode.swift; sourceTree = "<group>"; };
 		967A34DD283C1408007551E4 /* CompactPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactPlayerView.swift; sourceTree = "<group>"; };
 		E01428E2282DE5B0006C52B2 /* MockPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPodcast.swift; sourceTree = "<group>"; };
@@ -155,7 +158,9 @@
 		E01729FB281F056200BE0933 /* iOSPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				96100428283C29F300F2A7F9 /* Info.plist */,
 				E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */,
+				96100426283C24EC00F2A7F9 /* PlayerManager.swift */,
 				E0172A0A281F081400BE0933 /* TabBarView.swift */,
 				E0F010CD283AB24C008B1A92 /* Library View */,
 				967A34DC283C13F9007551E4 /* Player View */,
@@ -448,6 +453,7 @@
 				E0172A1E281F1C8A00BE0933 /* SearchLoader.swift in Sources */,
 				E0172A0E281F09DA00BE0933 /* SearchView.swift in Sources */,
 				E01428E3282DE5B0006C52B2 /* MockPodcast.swift in Sources */,
+				96100427283C24EC00F2A7F9 /* PlayerManager.swift in Sources */,
 				E0172A1B281F196F00BE0933 /* SearchDetailView-ViewModel.swift in Sources */,
 				E0172A16281F106900BE0933 /* SearchDetailView.swift in Sources */,
 				E0172A12281F0D0600BE0933 /* SearchRowModel.swift in Sources */,
@@ -624,6 +630,7 @@
 				DEVELOPMENT_TEAM = PN87M324F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSPrototype/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -652,6 +659,7 @@
 				DEVELOPMENT_TEAM = PN87M324F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSPrototype/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

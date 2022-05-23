@@ -10,13 +10,14 @@ import SwiftUI
 import Core
 
 struct EpisodeDetailView: View {
+  @EnvironmentObject var playerManager: PlayerManager
   let episode: Episode
   
   var body: some View {
     VStack {
       Text(episode.title)
       Button {
-        // play episode
+        playerManager.play(episode: episode.audioURL)
       } label: {
         Text("Play")
       }.buttonStyle(.bordered)

@@ -9,6 +9,8 @@ import SwiftUI
 import Core
 
 struct TabBarView: View {
+  @StateObject var playerManager = PlayerManager()
+
   let storageProvider: StorageProvider
 
   var body: some View {
@@ -24,11 +26,13 @@ struct TabBarView: View {
           Text("Searh View")
         }
     }
+    .environmentObject(playerManager)
     .overlay(alignment: .bottom) {
       CompactPlayerView()
         .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 50)
         .background(.ultraThickMaterial)
         .padding(.bottom, 49)
+        .environmentObject(playerManager)
     }
   }
 }

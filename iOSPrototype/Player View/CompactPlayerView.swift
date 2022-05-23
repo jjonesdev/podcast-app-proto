@@ -9,20 +9,20 @@
 import SwiftUI
 
 struct CompactPlayerView: View {
-  @State var isPlaying = false
+  @EnvironmentObject var playerManager: PlayerManager
   var body: some View {
     HStack(alignment: .bottom) {
       Text("Episode Title")
       Spacer()
-      if isPlaying {
+      if playerManager.isPlaying {
         Button {
-          // pause playback
+          playerManager.pause()
         } label: {
           Image(systemName: "pause.fill")
         }
       } else {
         Button {
-          // play episode
+          playerManager.resume()
         } label: {
           Image(systemName: "play.fill")
         }
