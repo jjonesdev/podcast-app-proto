@@ -14,7 +14,11 @@ struct LibraryDetailView: View {
   
   var body: some View {
     List(podcast.episodes, id: \.id) { episode in
-      Text(episode.title)
+      NavigationLink {
+        EpisodeDetailView(episode: episode)
+      } label: {
+        Text(episode.title)
+      }
     }
     .navigationTitle(Text(podcast.title))
   }
