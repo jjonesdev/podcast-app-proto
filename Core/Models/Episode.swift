@@ -14,10 +14,10 @@ public struct Episode {
   public let subtitle: String
   public let length: Int64
   public let audioURL: URL
-  public let audioType: String
+  public let audioType: String?
   public let publishDate: Date
 
-  public init(id: String, title: String, subtitle: String, length: Int64, audioURL: URL, audioType: String, publishDate: Date) {
+  public init(id: String, title: String, subtitle: String, length: Int64, audioURL: URL, audioType: String?, publishDate: Date) {
     self.id = id
     self.title = title
     self.subtitle = subtitle

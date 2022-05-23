@@ -33,7 +33,7 @@ public class ManagedPodcast: NSManagedObject, Identifiable {
 
   public var sortedEpisodes: Array<ManagedEpisode> {
     return Array(episodes).sorted { lhs, rhs in
-      return rhs.publishDate ?? Date() < lhs.publishDate ?? Date()
+      return rhs.publishDate < lhs.publishDate
     }
   }
 
