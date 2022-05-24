@@ -52,17 +52,7 @@ public class SubscriptionsProvider: NSObject, ObservableObject {
       title: managedPodcast.title,
       subtitle: managedPodcast.subtitle,
       artworkURL: URL(string: managedPodcast.artworkURL),
-      episodes: managedPodcast.sortedEpisodes.map {
-        return Episode(
-          id: $0.id,
-          title: $0.title,
-          subtitle: $0.subtitle,
-          length: $0.length,
-          audioURL: URL(string: $0.audioURL)!,
-          audioType: $0.audioType,
-          publishDate: $0.publishDate
-        )
-      }
+      episodes: managedPodcast.sortedEpisodes.map { Episode(managedEpisode: $0) }
     )
   }
 }

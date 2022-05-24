@@ -26,6 +26,16 @@ public struct Episode {
     self.audioType = audioType
     self.publishDate = publishDate
   }
+
+  init(managedEpisode: ManagedEpisode) {
+    self.id = managedEpisode.id
+    self.title = managedEpisode.title
+    self.length = managedEpisode.length
+    self.subtitle = managedEpisode.subtitle
+    self.audioURL = URL(string: managedEpisode.audioURL)!
+    self.audioType = managedEpisode.audioType
+    self.publishDate = managedEpisode.publishDate
+  }
 }
 
 // MARK: - Hashable Conformance
