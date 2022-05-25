@@ -26,6 +26,14 @@ public struct Podcast {
     self.artworkURL = artworkURL
     self.episodes = episodes
   }
+
+  init(managedPodcast: ManagedPodcast) {
+    self.id = managedPodcast.id
+    self.title = managedPodcast.title
+    self.subtitle = managedPodcast.subtitle
+    self.artworkURL = URL(string: managedPodcast.artworkURL)
+    self.episodes = managedPodcast.sortedEpisodes.map { Episode(managedEpisode: $0) }
+  }
 }
 
 // MARK: - Hashable Conformance

@@ -28,11 +28,13 @@ struct TabBarView: View {
     }
     .environmentObject(playerManager)
     .overlay(alignment: .bottom) {
-      CompactPlayerView()
-        .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 50)
-        .background(.ultraThickMaterial)
-        .padding(.bottom, 49)
-        .environmentObject(playerManager)
+      if let episode = playerManager.episode {
+        CompactPlayerView(title: episode.title)
+          .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 50)
+          .background(.ultraThickMaterial)
+          .padding(.bottom, 49)
+          .environmentObject(playerManager)
+      }
     }
   }
 }

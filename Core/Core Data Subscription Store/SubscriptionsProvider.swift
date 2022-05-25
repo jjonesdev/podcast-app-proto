@@ -46,14 +46,7 @@ public class SubscriptionsProvider: NSObject, ObservableObject {
 
   public func object(at indexPath: IndexPath) -> Podcast {
     let managedPodcast = fetchedResultsController.object(at: indexPath)
-
-    return Podcast(
-      id: managedPodcast.id,
-      title: managedPodcast.title,
-      subtitle: managedPodcast.subtitle,
-      artworkURL: URL(string: managedPodcast.artworkURL),
-      episodes: managedPodcast.sortedEpisodes.map { Episode(managedEpisode: $0) }
-    )
+    return Podcast(managedPodcast: managedPodcast)
   }
 }
 

@@ -10,9 +10,11 @@ import SwiftUI
 
 struct CompactPlayerView: View {
   @EnvironmentObject var playerManager: PlayerManager
+  let title: String
+
   var body: some View {
     HStack(alignment: .bottom) {
-      Text("Episode Title")
+      Text(title)
       Spacer()
       if playerManager.isPlaying {
         Button {
@@ -34,6 +36,6 @@ struct CompactPlayerView: View {
 
 struct CompactPlayerView_Previews: PreviewProvider {
   static var previews: some View {
-    CompactPlayerView()
+    CompactPlayerView(title: "Episode Title")
   }
 }

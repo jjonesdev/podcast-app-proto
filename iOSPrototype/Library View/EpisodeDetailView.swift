@@ -17,11 +17,12 @@ struct EpisodeDetailView: View {
     VStack {
       Text(episode.title)
       Button {
-        playerManager.play(episode: episode.audioURL)
+        playerManager.play(episode)
       } label: {
         Text("Play")
       }.buttonStyle(.bordered)
     }
+    .navigationTitle(episode.title)
   }
 }
 
