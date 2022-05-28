@@ -12,6 +12,7 @@
 		96100427283C24EC00F2A7F9 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96100426283C24EC00F2A7F9 /* PlayerManager.swift */; };
 		967A34DB283C0C0B007551E4 /* ManagedEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A34DA283C0C0B007551E4 /* ManagedEpisode.swift */; };
 		967A34DE283C1408007551E4 /* CompactPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A34DD283C1408007551E4 /* CompactPlayerView.swift */; };
+		96F04EF52842AE070038F370 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E091BF5E27F9339F00297C8A /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E01428E3282DE5B0006C52B2 /* MockPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01428E2282DE5B0006C52B2 /* MockPodcast.swift */; };
 		E01729FD281F056200BE0933 /* iOSPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01729FC281F056200BE0933 /* iOSPrototypeApp.swift */; };
 		E0172A0B281F081400BE0933 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0172A0A281F081400BE0933 /* TabBarView.swift */; };
@@ -51,6 +52,20 @@
 			remoteInfo = Core;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96F04EF62842AE070038F370 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				96F04EF52842AE070038F370 /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		96100422283C1C1F00F2A7F9 /* EpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailView.swift; sourceTree = "<group>"; };
@@ -333,6 +348,7 @@
 				E01729F6281F056200BE0933 /* Sources */,
 				E01729F7281F056200BE0933 /* Frameworks */,
 				E01729F8281F056200BE0933 /* Resources */,
+				96F04EF62842AE070038F370 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
